@@ -83,6 +83,7 @@ export default function ChatWidget() {
     return () => { cancelled = true; };
   }, [open]);
   const scrollRef = useRef<HTMLDivElement>(null);
+  const followLatest = useRef(true);
   const inputRef = useRef<HTMLInputElement>(null);
 
   /* blink loop — the little robot feels alive */
@@ -102,19 +103,25 @@ export default function ChatWidget() {
     };
   }, []);
 
-  /* autoscroll + focus */
+  // Keep native chat scrolling independent of the page's smooth scrolling.
+  // New replies follow the bottom only while the visitor is already there.
   useEffect(() => {
-    if (open) {
-      scrollRef.current?.scrollTo({ top: scrollRef.current.scrollHeight, behavior: 'smooth' });
-      setTimeout(() => inputRef.current?.focus(), 250);
-    }
-  }, [open, messages, busy]);
+    if (!open || !chatReady || !followLatest.current) return;
+    const panel = scrollRef.current;
+    if (panel) panel.scrollTop = panel.scrollHeight;
+  }, [open, chatReady, messages, busy]);
+
+  useEffect(() => {
+    if (!open || !chatReady) return;
+    inputRef.current?.focus({ preventScroll: true });
+  }, [open, chatReady]);
 
   const send = useCallback(
     async (text: string) => {
       const trimmed = text.trim();
       if (!trimmed || pending.current) return;
       pending.current = true;
+      followLatest.current = true;
       const version = conversationVersion.current;
 
       const history: Msg[] = [...messages, { id: nextId++, role: 'user', content: trimmed }];
@@ -152,11 +159,12 @@ export default function ChatWidget() {
 
   const newChat = () => {
     conversationVersion.current += 1;
+    followLatest.current = true;
     pending.current = false;
     setBusy(false);
     setInput('');
     setMessages([{ id: nextId++, role: 'assistant', content: GREETING }]);
-    inputRef.current?.focus();
+    inputRef.current?.focus({ preventScroll: true });
   };
 
   return (
@@ -192,6 +200,7 @@ export default function ChatWidget() {
         {open && (
           <motion.section
             aria-label="SCOPY — SC Advisors AI assistant"
+            data-lenis-prevent
             className="fixed bottom-24 right-4 z-[110] flex w-[calc(100vw-2rem)] max-w-[392px] flex-col overflow-hidden rounded-2xl border border-bone/10 bg-ink shadow-[0_30px_80px_rgba(0,0,0,0.65)] md:bottom-28 md:right-8"
             style={{ height: 'min(560px, calc(100dvh - 9rem))' }}
             initial={{ opacity: 0, y: 24, scale: 0.92, transformOrigin: 'bottom right' }}
@@ -200,7 +209,7 @@ export default function ChatWidget() {
             transition={{ type: 'spring', stiffness: 380, damping: 32 }}
           >
             {/* header */}
-            <header className="flex items-center gap-2 border-b border-bone/10 bg-[#111111] px-3 py-4">
+            <header className="flex shrink-0 items-center gap-2 border-b border-bone/10 bg-[#111111] px-3 py-4">
               <div className="shrink-0">
                 <ScopyFace size={32} blink={blink} />
               </div>
@@ -237,7 +246,19 @@ export default function ChatWidget() {
                   </button>
                 </div>
                 {/* messages */}
-                <div ref={scrollRef} className="flex-1 space-y-4 overflow-y-auto px-4 py-5" style={{ scrollbarWidth: 'thin' }}>
+                <div
+                  ref={scrollRef}
+                  data-lenis-prevent
+                  role="region"
+                  aria-label="Chat messages"
+                  tabIndex={0}
+                  onScroll={(event) => {
+                    const panel = event.currentTarget;
+                    followLatest.current = panel.scrollHeight - panel.scrollTop - panel.clientHeight < 48;
+                  }}
+                  className="min-h-0 flex-1 touch-pan-y space-y-4 overflow-y-auto overscroll-contain px-4 py-5"
+                  style={{ scrollbarWidth: 'thin', scrollbarColor: '#A8854F #161616', WebkitOverflowScrolling: 'touch' }}
+                >
                   {messages.map((m) => (
                     <div key={m.id} className={`flex ${m.role === 'user' ? 'justify-end' : 'justify-start'}`}>
                       {m.role === 'assistant' && (
@@ -279,7 +300,7 @@ export default function ChatWidget() {
 
                 {/* suggestions */}
                 {messages.length <= 1 && (
-                  <div className="flex flex-wrap gap-2 px-4 pb-3">
+                  <div className="flex max-h-[30%] shrink-0 flex-wrap gap-2 overflow-y-auto overscroll-contain px-4 pb-3">
                     {SUGGESTIONS.map((s) => (
                       <button
                         key={s}
@@ -295,7 +316,7 @@ export default function ChatWidget() {
 
                 {/* input */}
                 <form
-                  className="flex items-center gap-2 border-t border-bone/10 bg-[#111111] px-4 py-3"
+                  className="flex shrink-0 items-center gap-2 border-t border-bone/10 bg-[#111111] px-4 py-3"
                   onSubmit={(e) => {
                     e.preventDefault();
                     void send(input);
