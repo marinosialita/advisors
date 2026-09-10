@@ -25,7 +25,8 @@ No OpenAI key belongs in browser code or GitHub. The widget displays direct
 contact details until the server reports that a key is configured.
 Global limits: 10 chat requests/minute and 200/day; maximum 12 messages,
 1500 characters/message and 400 output tokens/request.
-The server prompt is confined to general firm services and contact details.
+SCOPY reads the website team directory and biographies, all 24 service descriptions, contact details and both published articles. It can explain published figures with their conditions, but cannot assess individual eligibility.
+After editing website content, run node scripts/sync-scopy-knowledge.mjs and redeploy website-api with both index.ts and knowledge.ts.
 No chat history is stored in the database. Conversations sent to the chatbot
 are processed by OpenAI when activated; update/approve privacy disclosures before launch.
 
