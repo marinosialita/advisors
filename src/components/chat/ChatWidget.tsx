@@ -8,6 +8,7 @@ const SUGGESTIONS = [
   'What services do you offer?',
   'Who is on the team?',
   'How can I contact you?',
+  'What is the IP Box regime?',
 ];
 
 const GREETING =
@@ -70,6 +71,8 @@ export default function ChatWidget() {
   const [messages, setMessages] = useState<Msg[]>([{ id: 0, role: 'assistant', content: GREETING }]);
   const [input, setInput] = useState('');
   const [busy, setBusy] = useState(false);
+  const conversationVersion = useRef(0);
+  const pending = useRef(false);
   const [chatReady, setChatReady] = useState<boolean | null>(null);
   useEffect(() => {
     if (!open) return;
@@ -110,7 +113,9 @@ export default function ChatWidget() {
   const send = useCallback(
     async (text: string) => {
       const trimmed = text.trim();
-      if (!trimmed || busy) return;
+      if (!trimmed || pending.current) return;
+      pending.current = true;
+      const version = conversationVersion.current;
 
       const history: Msg[] = [...messages, { id: nextId++, role: 'user', content: trimmed }];
       setMessages(history);
@@ -121,8 +126,10 @@ export default function ChatWidget() {
         const reply = await askOpenAI(
           history.slice(-12).map((m) => ({ role: m.role, content: m.content })),
         );
+        if (version !== conversationVersion.current) return;
         setMessages((m) => [...m, { id: nextId++, role: 'assistant', content: reply }]);
       } catch (err) {
+        if (version !== conversationVersion.current) return;
         const detail = err instanceof Error ? err.message : 'unknown error';
         setMessages((m) => [
           ...m,
@@ -133,12 +140,24 @@ export default function ChatWidget() {
           },
         ]);
       } finally {
-        setBusy(false);
+        if (version === conversationVersion.current) {
+          pending.current = false;
+          setBusy(false);
+        }
       }
     },
-    [busy, messages],
+    [messages],
   );
 
+
+  const newChat = () => {
+    conversationVersion.current += 1;
+    pending.current = false;
+    setBusy(false);
+    setInput('');
+    setMessages([{ id: nextId++, role: 'assistant', content: GREETING }]);
+    inputRef.current?.focus();
+  };
 
   return (
     <>
@@ -181,13 +200,13 @@ export default function ChatWidget() {
             transition={{ type: 'spring', stiffness: 380, damping: 32 }}
           >
             {/* header */}
-            <header className="flex items-center gap-3 border-b border-bone/10 bg-[#111111] px-5 py-4">
+            <header className="flex items-center gap-2 border-b border-bone/10 bg-[#111111] px-3 py-4">
               <div className="shrink-0">
-                <ScopyFace size={40} blink={blink} />
+                <ScopyFace size={32} blink={blink} />
               </div>
               <div className="min-w-0 flex-1">
-                <p className="font-display text-[17px] leading-tight text-bone">
-                  SCOPY <span className="italic text-bronze">— your SC Advisors assistant</span>
+                <p className="whitespace-nowrap font-display text-[14px] min-[380px]:text-[16px] leading-tight text-bone">
+                  SCOPY <span className="italic text-bronze">— SC Advisors AI</span>
                 </p>
                 <p className="mt-0.5 flex items-center gap-1.5 font-mono text-[10px] uppercase tracking-[0.14em] text-bone/45">
                   <span className={`h-1.5 w-1.5 rounded-full ${chatReady ? 'bg-emerald-400' : 'bg-bronze'}`} />
@@ -208,6 +227,15 @@ export default function ChatWidget() {
 
             {chatReady ? (
               <>
+                <div className="flex shrink-0 justify-end border-b border-bone/10 px-4 py-2">
+                  <button
+                    type="button"
+                    onClick={newChat}
+                    className="rounded-full border border-bronze/40 px-3 py-1 text-sm text-bronze transition-colors hover:bg-bronze hover:text-ink focus-visible:outline focus-visible:outline-2 focus-visible:outline-bronze"
+                  >
+                    New chat
+                  </button>
+                </div>
                 {/* messages */}
                 <div ref={scrollRef} className="flex-1 space-y-4 overflow-y-auto px-4 py-5" style={{ scrollbarWidth: 'thin' }}>
                   {messages.map((m) => (
