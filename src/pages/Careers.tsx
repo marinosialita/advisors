@@ -1,3 +1,4 @@
+import { submitWebsiteForm } from '@/lib/website-api';
 import { useContext, useEffect, useRef, useState } from 'react';
 import type { ChangeEvent, FormEvent } from 'react';
 import { Link } from 'react-router-dom';
@@ -205,6 +206,10 @@ export default function Careers({ locale = 'en' }: { locale?: 'en' | 'ru' }) {
   const [values, setValues] = useState<ApplicationValues>(INITIAL_VALUES);
   const [errors, setErrors] = useState<Partial<Record<keyof ApplicationValues, string>>>({});
   const [sent, setSent] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [submitError, setSubmitError] = useState('');
+  const submissionId = useRef(crypto.randomUUID());
+  const submittingRef = useRef(false);
 
   /* ---- GSAP scroll/load-in storytelling (reduced-motion guarded) ---- */
   useEffect(() => {
@@ -335,8 +340,9 @@ export default function Careers({ locale = 'en' }: { locale?: 'en' | 'ru' }) {
       setErrors((prev) => ({ ...prev, [key]: undefined }));
     };
 
-  const handleSubmit = (e: FormEvent) => {
+  const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
+    if (submittingRef.current) return;
     const next: Partial<Record<keyof ApplicationValues, string>> = {};
 
     if (!values.name.trim()) next.name = T.errName;
@@ -358,7 +364,19 @@ export default function Careers({ locale = 'en' }: { locale?: 'en' | 'ru' }) {
     if (!values.consent) next.consent = T.errConsent;
 
     setErrors(next);
-    if (Object.keys(next).length === 0) setSent(true);
+    if (Object.keys(next).length !== 0) return;
+    submittingRef.current = true;
+    setSubmitting(true);
+    setSubmitError('');
+    try {
+      await submitWebsiteForm('career', values, submissionId.current, locale);
+      setSent(true);
+    } catch (error) {
+      setSubmitError(error instanceof Error ? error.message : 'Unable to send. Please try again.');
+    } finally {
+      submittingRef.current = false;
+      setSubmitting(false);
+    }
   };
 
   return (
@@ -566,7 +584,10 @@ export default function Careers({ locale = 'en' }: { locale?: 'en' | 'ru' }) {
                       </>
                     </ConsentField>
                     <div className="js-field pt-2">
-                      <MagneticButton type="submit">{T.submit}</MagneticButton>
+                      {submitError && <p role="alert" className="mb-4 text-sm text-red-700">{submitError}</p>}
+                      <fieldset disabled={submitting} aria-busy={submitting}>
+                        <MagneticButton type="submit">{submitting ? (locale === 'ru' ? 'Отправка…' : 'Sending…') : T.submit}</MagneticButton>
+                      </fieldset>
                     </div>
                   </motion.form>
                 )}

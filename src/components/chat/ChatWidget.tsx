@@ -1,7 +1,8 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { ScopyFace } from './ScopyRobot';
-import { askOpenAI, getApiKey, setApiKey, type ChatMsg } from './knowledge';
+import { askOpenAI, type ChatMsg } from './knowledge';
+import { websiteApi } from '@/lib/website-api';
 
 const SUGGESTIONS = [
   'What services do you offer?',
@@ -69,8 +70,15 @@ export default function ChatWidget() {
   const [messages, setMessages] = useState<Msg[]>([{ id: 0, role: 'assistant', content: GREETING }]);
   const [input, setInput] = useState('');
   const [busy, setBusy] = useState(false);
-  const [keyDraft, setKeyDraft] = useState('');
-  const [hasKey, setHasKey] = useState(() => Boolean(getApiKey()));
+  const [chatReady, setChatReady] = useState<boolean | null>(null);
+  useEffect(() => {
+    if (!open) return;
+    let cancelled = false;
+    websiteApi<{ chatReady: boolean }>({ action: 'status' })
+      .then(data => { if (!cancelled) setChatReady(data.chatReady); })
+      .catch(() => { if (!cancelled) setChatReady(false); });
+    return () => { cancelled = true; };
+  }, [open]);
   const scrollRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
 
@@ -112,7 +120,6 @@ export default function ChatWidget() {
       try {
         const reply = await askOpenAI(
           history.slice(-12).map((m) => ({ role: m.role, content: m.content })),
-          getApiKey(),
         );
         setMessages((m) => [...m, { id: nextId++, role: 'assistant', content: reply }]);
       } catch (err) {
@@ -132,13 +139,6 @@ export default function ChatWidget() {
     [busy, messages],
   );
 
-  const saveKey = () => {
-    const k = keyDraft.trim();
-    if (!k) return;
-    setApiKey(k);
-    setHasKey(true);
-    setKeyDraft('');
-  };
 
   return (
     <>
@@ -190,8 +190,8 @@ export default function ChatWidget() {
                   SCOPY <span className="italic text-bronze">— your SC Advisors assistant</span>
                 </p>
                 <p className="mt-0.5 flex items-center gap-1.5 font-mono text-[10px] uppercase tracking-[0.14em] text-bone/45">
-                  <span className={`h-1.5 w-1.5 rounded-full ${hasKey ? 'bg-emerald-400' : 'bg-bronze'}`} />
-                  {hasKey ? 'Online — answers only about SC Advisors' : 'Setup needed'}
+                  <span className={`h-1.5 w-1.5 rounded-full ${chatReady ? 'bg-emerald-400' : 'bg-bronze'}`} />
+                  {chatReady ? 'Ask about SC Advisors' : chatReady === null ? 'Connecting…' : 'Contact our team'}
                 </p>
               </div>
               <button
@@ -206,7 +206,7 @@ export default function ChatWidget() {
               </button>
             </header>
 
-            {hasKey ? (
+            {chatReady ? (
               <>
                 {/* messages */}
                 <div ref={scrollRef} className="flex-1 space-y-4 overflow-y-auto px-4 py-5" style={{ scrollbarWidth: 'thin' }}>
@@ -275,6 +275,7 @@ export default function ChatWidget() {
                 >
                   <input
                     ref={inputRef}
+                    maxLength={1500}
                     value={input}
                     onChange={(e) => setInput(e.target.value)}
                     placeholder="Ask about SC Advisors…"
@@ -295,39 +296,13 @@ export default function ChatWidget() {
                 </form>
               </>
             ) : (
-              /* -------- API-key setup state -------- */
               <div className="flex flex-1 flex-col items-center justify-center gap-5 px-8 text-center">
                 <ScopyFace size={72} blink={blink} />
-                <div>
-                  <p className="font-display text-lg text-bone">One step left to wake me up</p>
-                  <p className="mt-2 text-[13px] leading-relaxed text-bone/60">
-                    Paste your OpenAI API key and I'll answer every question about SC Advisors — services, team,
-                    contact — and nothing else.
-                  </p>
-                </div>
-                <div className="w-full">
-                  <input
-                    type="password"
-                    value={keyDraft}
-                    onChange={(e) => setKeyDraft(e.target.value)}
-                    onKeyDown={(e) => e.key === 'Enter' && saveKey()}
-                    placeholder="sk-..."
-                    aria-label="OpenAI API key"
-                    className="w-full rounded-full border border-bone/15 bg-[#161616] px-4 py-2.5 font-mono text-[13px] text-bone placeholder:text-bone/30 focus:border-bronze focus:outline-none"
-                  />
-                  <button
-                    type="button"
-                    onClick={saveKey}
-                    disabled={!keyDraft.trim()}
-                    className="mt-3 w-full cursor-pointer rounded-full border-0 py-2.5 font-mono text-[11px] uppercase tracking-[0.16em] text-ink transition-opacity disabled:opacity-40"
-                    style={{ background: 'linear-gradient(150deg,#FF9663,#E56A1E)' }}
-                  >
-                    Activate SCOPY
-                  </button>
-                  <p className="mt-3 font-mono text-[9.5px] uppercase tracking-[0.12em] text-bone/35">
-                    Stored only in this browser — never sent anywhere but OpenAI
-                  </p>
-                </div>
+                <p role="status" className="text-base leading-relaxed text-bone/80">
+                  {chatReady === null ? 'Connecting…' : 'SCOPY is currently unavailable. Our team can help you directly.'}
+                </p>
+                <a href="mailto:team@sc-advisors.cy" className="text-bronze underline">team@sc-advisors.cy</a>
+                <a href="tel:+35725005284" className="text-bronze underline">+357 25005284</a>
               </div>
             )}
           </motion.section>

@@ -1,3 +1,4 @@
+import { submitWebsiteForm } from '@/lib/website-api';
 import { useContext, useEffect, useRef, useState } from 'react';
 import type { ChangeEvent, FormEvent } from 'react';
 import gsap from 'gsap';
@@ -80,6 +81,10 @@ export default function Contact() {
   const [values, setValues] = useState<EnquiryValues>(INITIAL_VALUES);
   const [errors, setErrors] = useState<Partial<Record<keyof EnquiryValues, string>>>({});
   const [sent, setSent] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [submitError, setSubmitError] = useState('');
+  const submissionId = useRef(crypto.randomUUID());
+  const submittingRef = useRef(false);
   const [copied, setCopied] = useState<string | null>(null);
 
   /* ---- JSON-LD: LocalBusiness (contact.md SEO) ---------------------- */
@@ -203,8 +208,9 @@ export default function Contact() {
       setErrors((prev) => ({ ...prev, [key]: undefined }));
     };
 
-  const handleSubmit = (e: FormEvent) => {
+  const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
+    if (submittingRef.current) return;
     const next: Partial<Record<keyof EnquiryValues, string>> = {};
 
     if (!values.name.trim()) next.name = 'Please enter your full name';
@@ -217,7 +223,19 @@ export default function Contact() {
     if (!values.consent) next.consent = 'Your consent is required';
 
     setErrors(next);
-    if (Object.keys(next).length === 0) setSent(true);
+    if (Object.keys(next).length !== 0) return;
+    submittingRef.current = true;
+    setSubmitting(true);
+    setSubmitError('');
+    try {
+      await submitWebsiteForm('contact', values, submissionId.current, 'en');
+      setSent(true);
+    } catch (error) {
+      setSubmitError(error instanceof Error ? error.message : 'Unable to send. Please try again.');
+    } finally {
+      submittingRef.current = false;
+      setSubmitting(false);
+    }
   };
 
   return (
@@ -427,7 +445,10 @@ export default function Contact() {
                       error={errors.consent}
                     />
                     <div className="js-field pt-2">
-                      <MagneticButton type="submit">Send Message</MagneticButton>
+                      {submitError && <p role="alert" className="mb-4 text-sm text-red-700">{submitError}</p>}
+                      <fieldset disabled={submitting} aria-busy={submitting}>
+                        <MagneticButton type="submit">{submitting ? 'Sending…' : 'Send Message'}</MagneticButton>
+                      </fieldset>
                     </div>
                   </motion.form>
                 )}

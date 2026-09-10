@@ -1,0 +1,5 @@
+project_id = "zhsrvidzhgfmqvxyxohd"
+
+[functions.website-api]
+# The function validates the publishable apikey itself; these are public website forms.
+verify_jwt = false

@@ -1,35 +1,44 @@
 # SC Advisors deployment
 
-## Current status
-The supplied React/Vite website has been imported without redesigning it.
-Cloudflare Pages SPA fallback and basic response headers have been added.
-Source is uploaded to https://github.com/marinosialita/advisors. No Supabase backend or Cloudflare deployment has been created.
-Sites registration was rejected because the account hosting usage limit was reached.
+Source: https://github.com/marinosialita/advisors
+Supabase: SC Advisors Website, Frankfurt, project zhsrvidzhgfmqvxyxohd.
 
-## GitHub and Cloudflare Pages
-Create a dedicated SC Advisors repository and upload this app directory as its root.
-In Cloudflare Pages connect that repository, select the intended production branch,
-use build command `npm run build`, and set output directory to `dist`.
-Use Node.js 22. Install reproducibly using the supplied package-lock.json.
-Connect the intended domain only after confirming ownership and the target website.
-Do not replace DNS records for an existing website without confirming the cutover.
+## Cloudflare Workers
+Connect the advisors repository, branch main. Build: npm run build. Deploy: npx wrangler deploy.
+wrangler.jsonc serves dist as static assets with single-page application routing.
+Root directory: repository root. Use Node.js 22.
+Cloudflare hosting and custom-domain cutover remain pending.
 
-## Features requiring completion before public launch
-- Contact and career forms currently only validate locally and display success;
-  they do not send or store submissions. Connect a server endpoint before launch.
-- The chat widget currently requests a visitor API key and calls OpenAI from the
-  browser. Replace that with a server-side endpoint and server-held secret before
-  offering a company-funded chatbot. Never put a secret key in VITE_* variables.
-- Select or create a dedicated Supabase project for this website. No existing
-  projects have been changed. Enable RLS, restrict access to submissions, and add
-  server-side validation and abuse protection when implementing forms.
-- Verify final domain references, sitemap, contact details and legal/tax content
-  with SC Advisors before public release. Content has not been legally reviewed.
+## Forms
+Contact and career forms call the deployed website-api Edge Function.
+Submissions are saved in public.website_submissions. Read them in the Supabase
+Table Editor with an authorised project account. Website visitors cannot read,
+update or delete these records. No email notifications have been configured.
+Requests are validated server-side; UUID retries avoid duplicate records.
+Global limit: 60 submissions/hour; per-email limit: 5/hour.
+Career CVs are links, not uploaded files. Russian contact page uses direct contact links.
 
-## Original source
-The original design, assets, routes and English/Russian content are retained.
+## Chatbot
+Add OPENAI_API_KEY to the project's Edge Functions > Secrets to activate SCOPY.
+Optional OPENAI_MODEL defaults to gpt-4o-mini, preserving the supplied model.
+No OpenAI key belongs in browser code or GitHub. The widget displays direct
+contact details until the server reports that a key is configured.
+Global limits: 10 chat requests/minute and 200/day; maximum 12 messages,
+1500 characters/message and 400 output tokens/request.
+The server prompt is confined to general firm services and contact details.
+No chat history is stored in the database. Conversations sent to the chatbot
+are processed by OpenAI when activated; update/approve privacy disclosures before launch.
 
-## Validation limitation
-Dependency installation encountered HTTP 502 errors from the package mirror; no successful production build or browser test has been completed.
+## Security
+The frontend contains only the Supabase publishable key. The Edge Function
+checks that key itself (verify_jwt=false), validates input, and applies quotas.
+Publishable keys are public and are not individual-user authentication.
+Database tables have RLS enabled and no visitor grants or policies.
+Only server credentials may insert/read submissions or consume quotas.
+Review retention needs and periodically remove old rate-limit buckets.
+Add CAPTCHA if traffic or abuse requires stronger protection.
 
-Cloudflare reference: https://developers.cloudflare.com/pages/framework-guides/deploy-a-vite3-project/
+## Schema
+supabase/schema/website.sql records the initial database schema.
+The remote schema is applied through a named Supabase migration.
+Original website content has not been legally or factually reviewed.
