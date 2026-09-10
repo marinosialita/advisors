@@ -1,0 +1,548 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://sc-advisors.com.cy/</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sc-advisors.com.cy/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sc-advisors.com.cy/ru"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sc-advisors.com.cy/"/>
+  </url>
+  <url>
+    <loc>https://sc-advisors.com.cy/ru</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sc-advisors.com.cy/ru"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sc-advisors.com.cy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sc-advisors.com.cy/"/>
+  </url>
+  <url>
+    <loc>https://sc-advisors.com.cy/who-we-are</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sc-advisors.com.cy/who-we-are"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sc-advisors.com.cy/ru/who-we-are"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sc-advisors.com.cy/who-we-are"/>
+  </url>
+  <url>
+    <loc>https://sc-advisors.com.cy/ru/who-we-are</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sc-advisors.com.cy/ru/who-we-are"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sc-advisors.com.cy/who-we-are"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sc-advisors.com.cy/who-we-are"/>
+  </url>
+  <url>
+    <loc>https://sc-advisors.com.cy/what-we-do</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sc-advisors.com.cy/what-we-do"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sc-advisors.com.cy/ru/what-we-do"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sc-advisors.com.cy/what-we-do"/>
+  </url>
+  <url>
+    <loc>https://sc-advisors.com.cy/ru/what-we-do</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sc-advisors.com.cy/ru/what-we-do"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sc-advisors.com.cy/what-we-do"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sc-advisors.com.cy/what-we-do"/>
+  </url>
+  <url>
+    <loc>https://sc-advisors.com.cy/for-corporates</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sc-advisors.com.cy/for-corporates"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sc-advisors.com.cy/ru/for-corporates"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sc-advisors.com.cy/for-corporates"/>
+  </url>
+  <url>
+    <loc>https://sc-advisors.com.cy/ru/for-corporates</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sc-advisors.com.cy/ru/for-corporates"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sc-advisors.com.cy/for-corporates"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sc-advisors.com.cy/for-corporates"/>
+  </url>
+  <url>
+    <loc>https://sc-advisors.com.cy/for-private-clients</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sc-advisors.com.cy/for-private-clients"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sc-advisors.com.cy/ru/for-private-clients"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sc-advisors.com.cy/for-private-clients"/>
+  </url>
+  <url>
+    <loc>https://sc-advisors.com.cy/ru/for-private-clients</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sc-advisors.com.cy/ru/for-private-clients"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sc-advisors.com.cy/for-private-clients"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sc-advisors.com.cy/for-private-clients"/>
+  </url>
+  <url>
+    <loc>https://sc-advisors.com.cy/careers</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.4</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sc-advisors.com.cy/careers"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sc-advisors.com.cy/ru/careers"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sc-advisors.com.cy/careers"/>
+  </url>
+  <url>
+    <loc>https://sc-advisors.com.cy/ru/careers</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.4</priority>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sc-advisors.com.cy/ru/careers"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sc-advisors.com.cy/careers"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sc-advisors.com.cy/careers"/>
+  </url>
+  <url>
+    <loc>https://sc-advisors.com.cy/contact</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sc-advisors.com.cy/contact"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sc-advisors.com.cy/ru/contact"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sc-advisors.com.cy/contact"/>
+  </url>
+  <url>
+    <loc>https://sc-advisors.com.cy/ru/contact</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sc-advisors.com.cy/ru/contact"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sc-advisors.com.cy/contact"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sc-advisors.com.cy/contact"/>
+  </url>
+  <url>
+    <loc>https://sc-advisors.com.cy/privacy-policy</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sc-advisors.com.cy/privacy-policy"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sc-advisors.com.cy/ru/privacy-policy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sc-advisors.com.cy/privacy-policy"/>
+  </url>
+  <url>
+    <loc>https://sc-advisors.com.cy/ru/privacy-policy</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sc-advisors.com.cy/ru/privacy-policy"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sc-advisors.com.cy/privacy-policy"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sc-advisors.com.cy/privacy-policy"/>
+  </url>
+  <url>
+    <loc>https://sc-advisors.com.cy/for-corporates/accounting-bookkeeping</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sc-advisors.com.cy/for-corporates/accounting-bookkeeping"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sc-advisors.com.cy/ru/for-corporates/accounting-bookkeeping"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sc-advisors.com.cy/for-corporates/accounting-bookkeeping"/>
+  </url>
+  <url>
+    <loc>https://sc-advisors.com.cy/ru/for-corporates/accounting-bookkeeping</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sc-advisors.com.cy/ru/for-corporates/accounting-bookkeeping"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sc-advisors.com.cy/for-corporates/accounting-bookkeeping"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sc-advisors.com.cy/for-corporates/accounting-bookkeeping"/>
+  </url>
+  <url>
+    <loc>https://sc-advisors.com.cy/for-corporates/banking</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sc-advisors.com.cy/for-corporates/banking"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sc-advisors.com.cy/ru/for-corporates/banking"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sc-advisors.com.cy/for-corporates/banking"/>
+  </url>
+  <url>
+    <loc>https://sc-advisors.com.cy/ru/for-corporates/banking</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sc-advisors.com.cy/ru/for-corporates/banking"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sc-advisors.com.cy/for-corporates/banking"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sc-advisors.com.cy/for-corporates/banking"/>
+  </url>
+  <url>
+    <loc>https://sc-advisors.com.cy/for-corporates/corporate-governance</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sc-advisors.com.cy/for-corporates/corporate-governance"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sc-advisors.com.cy/ru/for-corporates/corporate-governance"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sc-advisors.com.cy/for-corporates/corporate-governance"/>
+  </url>
+  <url>
+    <loc>https://sc-advisors.com.cy/ru/for-corporates/corporate-governance</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sc-advisors.com.cy/ru/for-corporates/corporate-governance"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sc-advisors.com.cy/for-corporates/corporate-governance"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sc-advisors.com.cy/for-corporates/corporate-governance"/>
+  </url>
+  <url>
+    <loc>https://sc-advisors.com.cy/for-corporates/corporate-and-legal</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sc-advisors.com.cy/for-corporates/corporate-and-legal"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sc-advisors.com.cy/ru/for-corporates/corporate-and-legal"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sc-advisors.com.cy/for-corporates/corporate-and-legal"/>
+  </url>
+  <url>
+    <loc>https://sc-advisors.com.cy/ru/for-corporates/corporate-and-legal</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sc-advisors.com.cy/ru/for-corporates/corporate-and-legal"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sc-advisors.com.cy/for-corporates/corporate-and-legal"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sc-advisors.com.cy/for-corporates/corporate-and-legal"/>
+  </url>
+  <url>
+    <loc>https://sc-advisors.com.cy/for-corporates/fiduciary</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sc-advisors.com.cy/for-corporates/fiduciary"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sc-advisors.com.cy/ru/for-corporates/fiduciary"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sc-advisors.com.cy/for-corporates/fiduciary"/>
+  </url>
+  <url>
+    <loc>https://sc-advisors.com.cy/ru/for-corporates/fiduciary</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sc-advisors.com.cy/ru/for-corporates/fiduciary"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sc-advisors.com.cy/for-corporates/fiduciary"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sc-advisors.com.cy/for-corporates/fiduciary"/>
+  </url>
+  <url>
+    <loc>https://sc-advisors.com.cy/for-corporates/fund-administration</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sc-advisors.com.cy/for-corporates/fund-administration"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sc-advisors.com.cy/ru/for-corporates/fund-administration"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sc-advisors.com.cy/for-corporates/fund-administration"/>
+  </url>
+  <url>
+    <loc>https://sc-advisors.com.cy/ru/for-corporates/fund-administration</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sc-advisors.com.cy/ru/for-corporates/fund-administration"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sc-advisors.com.cy/for-corporates/fund-administration"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sc-advisors.com.cy/for-corporates/fund-administration"/>
+  </url>
+  <url>
+    <loc>https://sc-advisors.com.cy/for-corporates/hr</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sc-advisors.com.cy/for-corporates/hr"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sc-advisors.com.cy/ru/for-corporates/hr"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sc-advisors.com.cy/for-corporates/hr"/>
+  </url>
+  <url>
+    <loc>https://sc-advisors.com.cy/ru/for-corporates/hr</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sc-advisors.com.cy/ru/for-corporates/hr"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sc-advisors.com.cy/for-corporates/hr"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sc-advisors.com.cy/for-corporates/hr"/>
+  </url>
+  <url>
+    <loc>https://sc-advisors.com.cy/for-corporates/intellectual-property-ip-box-tax-regime</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sc-advisors.com.cy/for-corporates/intellectual-property-ip-box-tax-regime"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sc-advisors.com.cy/ru/for-corporates/intellectual-property-ip-box-tax-regime"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sc-advisors.com.cy/for-corporates/intellectual-property-ip-box-tax-regime"/>
+  </url>
+  <url>
+    <loc>https://sc-advisors.com.cy/ru/for-corporates/intellectual-property-ip-box-tax-regime</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sc-advisors.com.cy/ru/for-corporates/intellectual-property-ip-box-tax-regime"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sc-advisors.com.cy/for-corporates/intellectual-property-ip-box-tax-regime"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sc-advisors.com.cy/for-corporates/intellectual-property-ip-box-tax-regime"/>
+  </url>
+  <url>
+    <loc>https://sc-advisors.com.cy/for-corporates/legal</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sc-advisors.com.cy/for-corporates/legal"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sc-advisors.com.cy/ru/for-corporates/legal"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sc-advisors.com.cy/for-corporates/legal"/>
+  </url>
+  <url>
+    <loc>https://sc-advisors.com.cy/ru/for-corporates/legal</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sc-advisors.com.cy/ru/for-corporates/legal"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sc-advisors.com.cy/for-corporates/legal"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sc-advisors.com.cy/for-corporates/legal"/>
+  </url>
+  <url>
+    <loc>https://sc-advisors.com.cy/for-corporates/licensing-authorization</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sc-advisors.com.cy/for-corporates/licensing-authorization"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sc-advisors.com.cy/ru/for-corporates/licensing-authorization"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sc-advisors.com.cy/for-corporates/licensing-authorization"/>
+  </url>
+  <url>
+    <loc>https://sc-advisors.com.cy/ru/for-corporates/licensing-authorization</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sc-advisors.com.cy/ru/for-corporates/licensing-authorization"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sc-advisors.com.cy/for-corporates/licensing-authorization"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sc-advisors.com.cy/for-corporates/licensing-authorization"/>
+  </url>
+  <url>
+    <loc>https://sc-advisors.com.cy/for-corporates/mergers-acquisitions</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sc-advisors.com.cy/for-corporates/mergers-acquisitions"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sc-advisors.com.cy/ru/for-corporates/mergers-acquisitions"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sc-advisors.com.cy/for-corporates/mergers-acquisitions"/>
+  </url>
+  <url>
+    <loc>https://sc-advisors.com.cy/ru/for-corporates/mergers-acquisitions</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sc-advisors.com.cy/ru/for-corporates/mergers-acquisitions"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sc-advisors.com.cy/for-corporates/mergers-acquisitions"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sc-advisors.com.cy/for-corporates/mergers-acquisitions"/>
+  </url>
+  <url>
+    <loc>https://sc-advisors.com.cy/for-corporates/redomiciliation</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sc-advisors.com.cy/for-corporates/redomiciliation"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sc-advisors.com.cy/ru/for-corporates/redomiciliation"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sc-advisors.com.cy/for-corporates/redomiciliation"/>
+  </url>
+  <url>
+    <loc>https://sc-advisors.com.cy/ru/for-corporates/redomiciliation</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sc-advisors.com.cy/ru/for-corporates/redomiciliation"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sc-advisors.com.cy/for-corporates/redomiciliation"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sc-advisors.com.cy/for-corporates/redomiciliation"/>
+  </url>
+  <url>
+    <loc>https://sc-advisors.com.cy/for-corporates/tax-vat-advisory</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sc-advisors.com.cy/for-corporates/tax-vat-advisory"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sc-advisors.com.cy/ru/for-corporates/tax-vat-advisory"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sc-advisors.com.cy/for-corporates/tax-vat-advisory"/>
+  </url>
+  <url>
+    <loc>https://sc-advisors.com.cy/ru/for-corporates/tax-vat-advisory</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sc-advisors.com.cy/ru/for-corporates/tax-vat-advisory"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sc-advisors.com.cy/for-corporates/tax-vat-advisory"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sc-advisors.com.cy/for-corporates/tax-vat-advisory"/>
+  </url>
+  <url>
+    <loc>https://sc-advisors.com.cy/for-corporates/trust-services</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sc-advisors.com.cy/for-corporates/trust-services"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sc-advisors.com.cy/ru/for-corporates/trust-services"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sc-advisors.com.cy/for-corporates/trust-services"/>
+  </url>
+  <url>
+    <loc>https://sc-advisors.com.cy/ru/for-corporates/trust-services</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sc-advisors.com.cy/ru/for-corporates/trust-services"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sc-advisors.com.cy/for-corporates/trust-services"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sc-advisors.com.cy/for-corporates/trust-services"/>
+  </url>
+  <url>
+    <loc>https://sc-advisors.com.cy/for-private-clients/accounting-bookkeeping</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sc-advisors.com.cy/for-private-clients/accounting-bookkeeping"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sc-advisors.com.cy/ru/for-private-clients/accounting-bookkeeping"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sc-advisors.com.cy/for-private-clients/accounting-bookkeeping"/>
+  </url>
+  <url>
+    <loc>https://sc-advisors.com.cy/ru/for-private-clients/accounting-bookkeeping</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sc-advisors.com.cy/ru/for-private-clients/accounting-bookkeeping"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sc-advisors.com.cy/for-private-clients/accounting-bookkeeping"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sc-advisors.com.cy/for-private-clients/accounting-bookkeeping"/>
+  </url>
+  <url>
+    <loc>https://sc-advisors.com.cy/for-private-clients/banking</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sc-advisors.com.cy/for-private-clients/banking"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sc-advisors.com.cy/ru/for-private-clients/banking"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sc-advisors.com.cy/for-private-clients/banking"/>
+  </url>
+  <url>
+    <loc>https://sc-advisors.com.cy/ru/for-private-clients/banking</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sc-advisors.com.cy/ru/for-private-clients/banking"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sc-advisors.com.cy/for-private-clients/banking"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sc-advisors.com.cy/for-private-clients/banking"/>
+  </url>
+  <url>
+    <loc>https://sc-advisors.com.cy/for-private-clients/comprehensive-real-estate-solutions</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sc-advisors.com.cy/for-private-clients/comprehensive-real-estate-solutions"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sc-advisors.com.cy/ru/for-private-clients/comprehensive-real-estate-solutions"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sc-advisors.com.cy/for-private-clients/comprehensive-real-estate-solutions"/>
+  </url>
+  <url>
+    <loc>https://sc-advisors.com.cy/ru/for-private-clients/comprehensive-real-estate-solutions</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sc-advisors.com.cy/ru/for-private-clients/comprehensive-real-estate-solutions"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sc-advisors.com.cy/for-private-clients/comprehensive-real-estate-solutions"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sc-advisors.com.cy/for-private-clients/comprehensive-real-estate-solutions"/>
+  </url>
+  <url>
+    <loc>https://sc-advisors.com.cy/for-private-clients/concierge-services</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sc-advisors.com.cy/for-private-clients/concierge-services"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sc-advisors.com.cy/ru/for-private-clients/concierge-services"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sc-advisors.com.cy/for-private-clients/concierge-services"/>
+  </url>
+  <url>
+    <loc>https://sc-advisors.com.cy/ru/for-private-clients/concierge-services</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sc-advisors.com.cy/ru/for-private-clients/concierge-services"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sc-advisors.com.cy/for-private-clients/concierge-services"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sc-advisors.com.cy/for-private-clients/concierge-services"/>
+  </url>
+  <url>
+    <loc>https://sc-advisors.com.cy/for-private-clients/immigration-residency</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sc-advisors.com.cy/for-private-clients/immigration-residency"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sc-advisors.com.cy/ru/for-private-clients/immigration-residency"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sc-advisors.com.cy/for-private-clients/immigration-residency"/>
+  </url>
+  <url>
+    <loc>https://sc-advisors.com.cy/ru/for-private-clients/immigration-residency</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sc-advisors.com.cy/ru/for-private-clients/immigration-residency"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sc-advisors.com.cy/for-private-clients/immigration-residency"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sc-advisors.com.cy/for-private-clients/immigration-residency"/>
+  </url>
+  <url>
+    <loc>https://sc-advisors.com.cy/for-private-clients/intellectual-property-ip-box</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sc-advisors.com.cy/for-private-clients/intellectual-property-ip-box"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sc-advisors.com.cy/ru/for-private-clients/intellectual-property-ip-box"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sc-advisors.com.cy/for-private-clients/intellectual-property-ip-box"/>
+  </url>
+  <url>
+    <loc>https://sc-advisors.com.cy/ru/for-private-clients/intellectual-property-ip-box</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sc-advisors.com.cy/ru/for-private-clients/intellectual-property-ip-box"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sc-advisors.com.cy/for-private-clients/intellectual-property-ip-box"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sc-advisors.com.cy/for-private-clients/intellectual-property-ip-box"/>
+  </url>
+  <url>
+    <loc>https://sc-advisors.com.cy/for-private-clients/legal</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sc-advisors.com.cy/for-private-clients/legal"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sc-advisors.com.cy/ru/for-private-clients/legal"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sc-advisors.com.cy/for-private-clients/legal"/>
+  </url>
+  <url>
+    <loc>https://sc-advisors.com.cy/ru/for-private-clients/legal</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sc-advisors.com.cy/ru/for-private-clients/legal"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sc-advisors.com.cy/for-private-clients/legal"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sc-advisors.com.cy/for-private-clients/legal"/>
+  </url>
+  <url>
+    <loc>https://sc-advisors.com.cy/for-private-clients/multifamily-office</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sc-advisors.com.cy/for-private-clients/multifamily-office"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sc-advisors.com.cy/ru/for-private-clients/multifamily-office"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sc-advisors.com.cy/for-private-clients/multifamily-office"/>
+  </url>
+  <url>
+    <loc>https://sc-advisors.com.cy/ru/for-private-clients/multifamily-office</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sc-advisors.com.cy/ru/for-private-clients/multifamily-office"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sc-advisors.com.cy/for-private-clients/multifamily-office"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sc-advisors.com.cy/for-private-clients/multifamily-office"/>
+  </url>
+  <url>
+    <loc>https://sc-advisors.com.cy/for-private-clients/real-estate-transaction-investment</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sc-advisors.com.cy/for-private-clients/real-estate-transaction-investment"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sc-advisors.com.cy/ru/for-private-clients/real-estate-transaction-investment"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sc-advisors.com.cy/for-private-clients/real-estate-transaction-investment"/>
+  </url>
+  <url>
+    <loc>https://sc-advisors.com.cy/ru/for-private-clients/real-estate-transaction-investment</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sc-advisors.com.cy/ru/for-private-clients/real-estate-transaction-investment"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sc-advisors.com.cy/for-private-clients/real-estate-transaction-investment"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sc-advisors.com.cy/for-private-clients/real-estate-transaction-investment"/>
+  </url>
+  <url>
+    <loc>https://sc-advisors.com.cy/for-private-clients/tax-advisory</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sc-advisors.com.cy/for-private-clients/tax-advisory"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sc-advisors.com.cy/ru/for-private-clients/tax-advisory"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sc-advisors.com.cy/for-private-clients/tax-advisory"/>
+  </url>
+  <url>
+    <loc>https://sc-advisors.com.cy/ru/for-private-clients/tax-advisory</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sc-advisors.com.cy/ru/for-private-clients/tax-advisory"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sc-advisors.com.cy/for-private-clients/tax-advisory"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sc-advisors.com.cy/for-private-clients/tax-advisory"/>
+  </url>
+  <url>
+    <loc>https://sc-advisors.com.cy/insights/cyprus-ip-box-regime</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sc-advisors.com.cy/insights/cyprus-ip-box-regime"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sc-advisors.com.cy/ru/insights/cyprus-ip-box-regime"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sc-advisors.com.cy/insights/cyprus-ip-box-regime"/>
+  </url>
+  <url>
+    <loc>https://sc-advisors.com.cy/ru/insights/cyprus-ip-box-regime</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sc-advisors.com.cy/ru/insights/cyprus-ip-box-regime"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sc-advisors.com.cy/insights/cyprus-ip-box-regime"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sc-advisors.com.cy/insights/cyprus-ip-box-regime"/>
+  </url>
+  <url>
+    <loc>https://sc-advisors.com.cy/insights/cyprus-60-day-rule</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sc-advisors.com.cy/insights/cyprus-60-day-rule"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sc-advisors.com.cy/ru/insights/cyprus-60-day-rule"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sc-advisors.com.cy/insights/cyprus-60-day-rule"/>
+  </url>
+  <url>
+    <loc>https://sc-advisors.com.cy/ru/insights/cyprus-60-day-rule</loc>
+    <lastmod>2026-09-07</lastmod>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://sc-advisors.com.cy/ru/insights/cyprus-60-day-rule"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://sc-advisors.com.cy/insights/cyprus-60-day-rule"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://sc-advisors.com.cy/insights/cyprus-60-day-rule"/>
+  </url>
+</urlset>
