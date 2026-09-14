@@ -5,21 +5,21 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        // SC Advisors brand palette (original branding: black/white/orange)
+        // SC Advisors brand palette — aligned to original corporate artwork
         bone: "#FFFFFF",
         ivory: "#F7F7F5",
         stone: "#E5E5E2",
         sand: "#CFCFCB",
         bronze: {
-          DEFAULT: "#FF824D",
-          deep: "#E56A1E",
+          DEFAULT: "#F6882A",
+          deep: "#F6882A",
         },
         ink: {
           DEFAULT: "#0A0A0A",
           soft: "#141414",
         },
         umber: "#40403C",
-        mist: "#8A8A85",
+        mist: "#808285",
         parchment: "#D4D4CF", // body text on dark
         // shadcn tokens (kept for ui/ components)
         border: "hsl(var(--border))",
@@ -37,7 +37,7 @@ module.exports = {
         },
         destructive: {
           DEFAULT: "hsl(var(--destructive) / <alpha-value>)",
-          foreground: "hsl(var(--destructive-foreground) / <alpha-value>)",
+          foreground: "hsl(var(--destructive-foreground))",
         },
         muted: {
           DEFAULT: "hsl(var(--muted))",
