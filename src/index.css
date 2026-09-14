@@ -48,7 +48,7 @@
     --muted: 240 3.7% 15.9%;
     --muted-foreground: 240 5% 64.9%;
     --accent: 240 3.7% 15.9%;
-    --accent-foreground: 0 0% 98%;
+    --accent-foreground: 240 4.8% 95.9%;
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 0 0% 98%;
     --border: 240 3.7% 15.9%;
@@ -75,21 +75,21 @@
 }
 
 /* ------------------------------------------------------------------
-   SC Advisors — global brand layer (design.md §2–§5)
+   SC Advisors — global brand layer
 ------------------------------------------------------------------- */
 @layer base {
   :root {
-    /* Brand tokens as CSS variables for use in inline styles / GSAP */
+    /* Verified against the original SC Advisors corporate SVG artwork. */
     --bone: #FFFFFF;
     --ivory: #F7F7F5;
     --stone: #E5E5E2;
     --sand: #CFCFCB;
-    --bronze: #FF824D;
-    --bronze-deep: #E56A1E;
+    --bronze: #F6882A;
+    --bronze-deep: #F6882A;
     --ink: #0A0A0A;
     --ink-soft: #141414;
     --umber: #40403C;
-    --mist: #8A8A85;
+    --mist: #808285;
     --parchment: #D4D4CF;
     --error: #D9480F;
     --nav-h: 58px;
@@ -171,7 +171,7 @@
     z-index: 120;
     opacity: 0.05;
     mix-blend-mode: overlay;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitchTiles'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
   }
 
   /* Skip to content */
