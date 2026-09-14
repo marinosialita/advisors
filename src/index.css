@@ -181,6 +181,41 @@
   .skip-link:focus-visible {
     transform: translateY(0);
   }
+
+  /* Legacy hard-coded glow values are normalised to the verified original
+     SC Advisors orange without changing layout or animation behaviour. */
+  .js-talk-breath > span[aria-hidden="true"] {
+    background: radial-gradient(circle, rgba(246, 136, 42, 0.38) 0%, rgba(246, 136, 42, 0.14) 46%, rgba(246, 136, 42, 0) 70%) !important;
+  }
+
+  .js-talk-breath > span[class*="bg-[#FF824D]"] {
+    background-color: #F6882A !important;
+    box-shadow: 0 18px 50px rgba(246, 136, 42, 0.35) !important;
+  }
+
+  .js-split-left > div[aria-hidden="true"]:first-child {
+    background: radial-gradient(460px circle at var(--mx, 50%) var(--my, 50%), rgba(246, 136, 42, 0.16), transparent 65%) !important;
+  }
+
+  .js-split-right > div[aria-hidden="true"]:first-child {
+    background: radial-gradient(460px circle at var(--mx, 50%) var(--my, 50%), rgba(246, 136, 42, 0.13), transparent 65%) !important;
+  }
+
+  .js-hero [style*="radial-gradient(ellipse 62% 58%"] {
+    background: radial-gradient(ellipse 62% 58% at 72% 46%, rgba(246, 136, 42, 0.20) 0%, rgba(246, 136, 42, 0.09) 42%, rgba(246, 136, 42, 0) 68%) !important;
+  }
+
+  .js-s4-glow {
+    background: radial-gradient(ellipse 55% 42% at 68% 38%, rgba(246, 136, 42, 0.55) 0%, rgba(246, 136, 42, 0.22) 45%, rgba(246, 136, 42, 0) 72%) !important;
+  }
+
+  .js-s7-glow {
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.55) 0%, rgba(246, 136, 42, 0.28) 26%, rgba(246, 136, 42, 0.12) 46%, transparent 66%) !important;
+  }
+
+  .js-s7-ring {
+    background: conic-gradient(from 0deg, transparent 0deg, rgba(246, 136, 42, 0.9) 38deg, transparent 95deg, transparent 190deg, rgba(255, 255, 255, 0.7) 248deg, transparent 305deg) !important;
+  }
 }
 
 @layer utilities {
