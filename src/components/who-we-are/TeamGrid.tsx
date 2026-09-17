@@ -70,7 +70,12 @@ function TeamCard({
           src={member.image}
           alt={`${member.name} — ${role}`}
           loading="lazy"
-          className="js-team-img h-full w-full object-cover grayscale-[0.15] transition-[transform,filter] duration-500 ease-out-expo group-hover:scale-[1.04] group-hover:grayscale-0"
+          className={cn(
+            'js-team-img h-full w-full object-cover grayscale-[0.15] transition-[transform,filter] duration-500 ease-out-expo group-hover:grayscale-0',
+            member.slug === 'antria-demetriou'
+              ? 'scale-[1.10] group-hover:scale-[1.14]'
+              : 'group-hover:scale-[1.04]',
+          )}
         />
       </div>
 
