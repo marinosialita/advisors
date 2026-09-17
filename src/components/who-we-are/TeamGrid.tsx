@@ -55,6 +55,7 @@ function TeamCard({
 }) {
   const bio = teamBioFor(member.slug);
   const role = locale === 'ru' ? (member.roleRu ?? member.role) : member.role;
+  const isAntria = member.slug === 'antria-demetriou';
 
   return (
     <button
@@ -66,17 +67,22 @@ function TeamCard({
       className="js-team-card group scroll-mt-28 text-left"
     >
       <div className="js-team-imgwrap relative aspect-[1024/1436] overflow-hidden border border-stone/60 bg-ivory">
-        <img
-          src={member.image}
-          alt={`${member.name} — ${role}`}
-          loading="lazy"
+        <div
           className={cn(
-            'js-team-img h-full w-full object-cover grayscale-[0.15] transition-[transform,filter] duration-500 ease-out-expo group-hover:grayscale-0',
-            member.slug === 'antria-demetriou'
-              ? 'scale-[1.10] group-hover:scale-[1.14]'
-              : 'group-hover:scale-[1.04]',
+            'h-full w-full transition-transform duration-500 ease-out-expo',
+            isAntria && 'scale-[1.10] group-hover:scale-[1.14]',
           )}
-        />
+        >
+          <img
+            src={member.image}
+            alt={`${member.name} — ${role}`}
+            loading="lazy"
+            className={cn(
+              'js-team-img h-full w-full object-cover grayscale-[0.15] transition-[transform,filter] duration-500 ease-out-expo group-hover:grayscale-0',
+              !isAntria && 'group-hover:scale-[1.04]',
+            )}
+          />
+        </div>
       </div>
 
       <div className="mt-6 flex items-start justify-between gap-4">
