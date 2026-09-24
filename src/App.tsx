@@ -13,6 +13,7 @@ const ServiceDetail = lazy(() => import('./pages/ServiceDetail'))
 const Careers = lazy(() => import('./pages/Careers'))
 const Contact = lazy(() => import('./pages/Contact'))
 const PrivacyPolicy = lazy(() => import('./pages/PrivacyPolicy'))
+const Articles = lazy(() => import('./pages/Articles'))
 const InsightArticle = lazy(() => import('./pages/InsightArticle'))
 const RuHome = lazy(() => import('./pages/ru/RuHome'))
 const RuContact = lazy(() => import('./pages/ru/RuContact'))
@@ -34,6 +35,8 @@ export default function App() {
           <Route path="for-corporates/:slug" element={<ServiceDetail group="corporate" />} />
           <Route path="for-private-clients" element={<ForPrivateClients />} />
           <Route path="for-private-clients/:slug" element={<ServiceDetail group="private" />} />
+          <Route path="articles" element={<Articles />} />
+          <Route path="ru/articles" element={<Articles locale="ru" />} />
           <Route path="insights/:slug" element={<InsightArticle />} />
           <Route path="careers" element={<Careers />} />
           <Route path="contact" element={<Contact />} />

@@ -149,6 +149,10 @@ export const CORPORATE_SERVICES: ServiceItem[] = [
 ];
 
 export const PRIVATE_SERVICES: ServiceItem[] = [
+  {"slug": "hr-services", "title": "HR Services", "description": "HR services for private clients.", "titleRu": "HR-услуги", "descriptionRu": "HR-услуги для частных клиентов."},
+  {"slug": "relocation", "title": "Relocation", "description": "Relocation support for individuals and families.", "titleRu": "Релокация", "descriptionRu": "Сопровождение переезда для частных лиц и семей."},
+  {"slug": "trust-wills", "title": "Trust & Wills", "description": "Trust and will services for private clients.", "titleRu": "Трасты и завещания", "descriptionRu": "Услуги по трастам и завещаниям для частных клиентов."},
+
   {
     slug: 'accounting-bookkeeping',
     title: 'Accounting & Bookkeeping',

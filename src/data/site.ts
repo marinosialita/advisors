@@ -13,6 +13,7 @@ export const NAV_LINKS: NavItem[] = [
   { label: 'What We Do', path: '/what-we-do' },
   { label: 'For Corporates', path: '/for-corporates' },
   { label: 'For Private Clients', path: '/for-private-clients' },
+  { label: 'Articles', path: '/articles' },
   { label: 'Careers', path: '/careers' },
   { label: 'Contact', path: '/contact' },
 ];

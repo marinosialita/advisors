@@ -13,6 +13,7 @@ interface NavbarProps {
 const TEXT_LINKS = [
   { label: 'Who We Are', path: '/who-we-are' },
   { label: 'What We Do', path: '/what-we-do' },
+  { label: 'Articles', path: '/articles' },
 ];
 
 /** … then two outlined pill links; everything else lives in the Menu overlay */
@@ -25,6 +26,7 @@ const PILL_LINKS = [
 const TEXT_LINKS_RU = [
   { label: 'Кто мы', path: '/ru/who-we-are' },
   { label: 'Что мы делаем', path: '/ru/what-we-do' },
+  { label: 'Статьи', path: '/ru/articles' },
 ];
 
 const PILL_LINKS_RU = [
@@ -179,8 +181,8 @@ export default function Navbar({ onMenuOpen }: NavbarProps) {
 
         {/* Right cluster — text links + pills are desktop-only; the circular
             burger serves every viewport */}
-        <div className="flex items-center gap-6 lg:gap-8">
-          <nav aria-label="Primary" className="hidden items-center gap-8 lg:flex">
+        <div className="flex items-center gap-4 xl:gap-8">
+          <nav aria-label="Primary" className="hidden items-center gap-4 xl:gap-8 lg:flex">
             {textLinks.map((item) => (
               <NavLink
                 key={item.path}

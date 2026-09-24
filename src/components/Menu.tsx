@@ -16,6 +16,7 @@ const NAV_LINKS_RU = [
   { label: 'Что мы делаем', path: '/ru/what-we-do' },
   { label: 'Для бизнеса', path: '/ru/for-corporates' },
   { label: 'Частным клиентам', path: '/ru/for-private-clients' },
+  { label: 'Статьи', path: '/ru/articles' },
   { label: 'Карьера', path: '/ru/careers' },
   { label: 'Контакты', path: '/ru/contact' },
 ];

@@ -529,6 +529,10 @@ export const SERVICE_DETAILS: Record<ServiceGroup, Record<string, ServiceBlock[]
     ],
   },
   private: {
+    "hr-services": [{ type: 'paragraph', text: "HR services for private clients." }],
+    "relocation": [{ type: 'paragraph', text: "Relocation support for individuals and families." }],
+    "trust-wills": [{ type: 'paragraph', text: "Trust and will services for private clients." }],
+
     "accounting-bookkeeping": [
       { type: 'paragraph', text: "Our team of dedicated, experienced accountants provides a broad spectrum of accounting services, tailored to meet our clients’ unique business needs. These include bookkeeping and payroll solutions for a wide range of firms and entities, multi-currency accounting preparation, invoicing and valuation, and training and auditing" },
       { type: 'paragraph', text: "At the core of our business philosophy is one clear goal: to deliver high-quality accounting services that add real value to your operations while upholding the highest standards of professionalism, confidentiality, and business ethics." },
