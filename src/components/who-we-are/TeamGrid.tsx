@@ -70,7 +70,7 @@ function TeamCard({
         <div
           className={cn(
             'h-full w-full transition-transform duration-500 ease-out-expo',
-            isAntria && 'scale-[1.10] group-hover:scale-[1.14]',
+            isAntria && 'origin-[center_25%] scale-[1.50] group-hover:scale-[1.56]',
           )}
         >
           <img
