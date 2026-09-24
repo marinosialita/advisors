@@ -1318,12 +1318,18 @@ export default function Home() {
                 className="js-team-card group w-[min(340px,78vw)] shrink-0 snap-start"
               >
                 <div className="js-team-imgwrap aspect-[5/7] overflow-hidden border-2 border-stone/60">
-                  <img
-                    src={member.image}
-                    alt={`${member.name} — ${member.role}`}
-                    className="js-team-img h-full w-full object-cover grayscale-[0.15] transition-all duration-500 ease-out-expo group-hover:scale-[1.04] group-hover:grayscale-0"
-                    loading="lazy"
-                  />
+                  <div
+                    className={member.slug === 'antria-demetriou'
+                      ? 'h-full w-full origin-[center_25%] scale-[1.50] transition-transform duration-500 ease-out-expo group-hover:scale-[1.56]'
+                      : 'h-full w-full'}
+                  >
+                    <img
+                      src={member.image}
+                      alt={`${member.name} — ${member.role}`}
+                      className={`js-team-img h-full w-full object-cover grayscale-[0.15] transition-all duration-500 ease-out-expo group-hover:grayscale-0 ${member.slug === 'antria-demetriou' ? '' : 'group-hover:scale-[1.04]'}`}
+                      loading="lazy"
+                    />
+                  </div>
                 </div>
                 <h3 className="mt-6 font-display text-2xl text-ink">{member.name}</h3>
                 <p className="mt-2 font-mono text-[11px] uppercase tracking-nav text-bronze">
