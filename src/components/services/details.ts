@@ -529,9 +529,144 @@ export const SERVICE_DETAILS: Record<ServiceGroup, Record<string, ServiceBlock[]
     ],
   },
   private: {
-    "hr-services": [{ type: 'paragraph', text: "HR services for private clients." }],
-    "relocation": [{ type: 'paragraph', text: "Relocation support for individuals and families." }],
-    "trust-wills": [{ type: 'paragraph', text: "Trust and will services for private clients." }],
+  "hr-services": [
+  {
+    "type": "paragraph",
+    "text": "People support for private clients and family offices."
+  },
+  {
+    "type": "paragraph",
+    "text": "SC Advisors helps private clients, founders and families with recruitment, people advisory and the organisation of their teams in Cyprus and internationally."
+  },
+  {
+    "type": "section-heading",
+    "text": "How we can help"
+  },
+  {
+    "type": "offer-item",
+    "lead": "Family-office recruitment",
+    "text": "Support with finding private staff, personal assistants, advisers and investment professionals, according to the role and your requirements."
+  },
+  {
+    "type": "offer-item",
+    "lead": "Executive search",
+    "text": "Recruitment support for senior leadership and board-level roles, including interim and fractional leadership appointments."
+  },
+  {
+    "type": "offer-item",
+    "lead": "Talent and leadership assessment",
+    "text": "Assessment of candidates, leadership potential and team effectiveness to support recruitment and development decisions."
+  },
+  {
+    "type": "offer-item",
+    "lead": "HR organisation and advisory",
+    "text": "Support with people processes, compensation strategy, retention and succession planning for family-office and business teams."
+  },
+  {
+    "type": "section-heading",
+    "text": "A tailored brief"
+  },
+  {
+    "type": "paragraph",
+    "text": "We discuss the role, responsibilities, working arrangements and priorities, then agree the scope of the search and advisory support before work begins."
+  },
+  {
+    "type": "paragraph",
+    "text": "Contact our team to discuss your recruitment and HR requirements."
+  }
+],
+  "relocation": [
+  {
+    "type": "paragraph",
+    "text": "Practical support for your move to Cyprus."
+  },
+  {
+    "type": "paragraph",
+    "text": "SC Advisors coordinates relocation services for individuals, entrepreneurs and families, helping you plan the move and organise the steps needed to settle in Cyprus."
+  },
+  {
+    "type": "section-heading",
+    "text": "How we can help"
+  },
+  {
+    "type": "offer-item",
+    "lead": "Residence and immigration coordination",
+    "text": "Assistance with identifying the relevant residence route and coordinating applications and supporting documents, according to your circumstances."
+  },
+  {
+    "type": "offer-item",
+    "lead": "Property and accommodation",
+    "text": "Support with property sourcing and coordination of the legal and practical aspects of renting or buying a home."
+  },
+  {
+    "type": "offer-item",
+    "lead": "Banking and tax coordination",
+    "text": "Assistance with banking applications and coordination with our tax team on registrations and advice relevant to your move."
+  },
+  {
+    "type": "offer-item",
+    "lead": "Family and daily-life arrangements",
+    "text": "Private schooling and education coordination, personal staffing and concierge support based on your family’s requirements."
+  },
+  {
+    "type": "section-heading",
+    "text": "Planning your move"
+  },
+  {
+    "type": "paragraph",
+    "text": "We discuss who is relocating, your timing, accommodation and work plans, then agree the services and documents required. Residence permissions and bank accounts remain subject to the relevant authorities’ and institutions’ approval."
+  },
+  {
+    "type": "paragraph",
+    "text": "Contact our team to plan your relocation to Cyprus."
+  }
+],
+  "trust-wills": [
+  {
+    "type": "paragraph",
+    "text": "Plan for the people and assets that matter."
+  },
+  {
+    "type": "paragraph",
+    "text": "SC Advisors assists individuals and families with trust arrangements, wills and succession planning. We discuss your family circumstances, assets and objectives to coordinate the legal and administrative work."
+  },
+  {
+    "type": "section-heading",
+    "text": "How we can help"
+  },
+  {
+    "type": "offer-item",
+    "lead": "Trust formation and structuring",
+    "text": "Assistance with establishing Cyprus International Trusts and preparing trust documentation that reflects the intended arrangements, subject to applicable legal requirements."
+  },
+  {
+    "type": "offer-item",
+    "lead": "Trust administration",
+    "text": "Support with trustee and protector arrangements, records, banking coordination and ongoing administration."
+  },
+  {
+    "type": "offer-item",
+    "lead": "Wills and succession planning",
+    "text": "Assistance with preparing or reviewing wills and considering how they fit with your wider succession plans and existing arrangements."
+  },
+  {
+    "type": "offer-item",
+    "lead": "Estate planning coordination",
+    "text": "Support with organising information on assets and beneficiaries and coordinating legal, tax and administrative advice, including where assets or family members are abroad."
+  },
+  {
+    "type": "section-heading",
+    "text": "An individual assessment"
+  },
+  {
+    "type": "paragraph",
+    "text": "The appropriate arrangements depend on your circumstances and applicable laws. We agree the scope with you before preparing documents and coordinate with other advisers where required."
+  },
+  {
+    "type": "paragraph",
+    "text": "Contact our team to discuss your trust, will and succession-planning needs."
+  }
+],
 
     "accounting-bookkeeping": [
       { type: 'paragraph', text: "Our team of dedicated, experienced accountants provides a broad spectrum of accounting services, tailored to meet our clients’ unique business needs. These include bookkeeping and payroll solutions for a wide range of firms and entities, multi-currency accounting preparation, invoicing and valuation, and training and auditing" },

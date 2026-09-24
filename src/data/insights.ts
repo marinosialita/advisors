@@ -43,6 +43,127 @@ export interface Insight {
 }
 
 export const INSIGHTS: Insight[] = [
+{
+  "slug": "setting-up-a-cyprus-company",
+  "tag": "Corporate — Company Setup",
+  "title": "Setting Up a Cyprus Company: From Incorporation to Banking and Registration",
+  "accentWords": [
+    "Cyprus",
+    "Company"
+  ],
+  "lead": "Establishing a company involves more than receiving a certificate of incorporation. SC Advisors helps coordinate the formation, registrations and practical arrangements needed to get your business started.",
+  "image": "/assets/pillar-corporate.jpg",
+  "imageAlt": "Corporate services at SC Advisors",
+  "excerpt": "From incorporation and tax registration to VAT, UBO, Ariadni and banking support—how SC Advisors helps coordinate your company setup.",
+  "readingTime": "4 min read",
+  "updated": "September 2026",
+  "relatedService": {
+    "label": "Corporate Services",
+    "to": "/for-corporates"
+  },
+  "blocks": [
+    {
+      "type": "p",
+      "text": "Whether you are launching a new venture or establishing a presence in Cyprus, we can help you identify the steps relevant to your business and manage the process."
+    },
+    {
+      "type": "h2",
+      "text": "Company incorporation"
+    },
+    {
+      "type": "p",
+      "text": "We assist with incorporating your Cyprus company and preparing the necessary corporate documentation."
+    },
+    {
+      "type": "p",
+      "text": "At the outset, we discuss the proposed business activities, ownership and management structure so that the incorporation reflects your plans."
+    },
+    {
+      "type": "h2",
+      "text": "Tax registration"
+    },
+    {
+      "type": "p",
+      "text": "We assist with the company’s tax registration and obtaining its Tax Identification Number, coordinating the required information and supporting documents."
+    },
+    {
+      "type": "p",
+      "text": "This is a separate step from incorporation and forms part of setting up the company’s tax affairs."
+    },
+    {
+      "type": "h2",
+      "text": "VAT registration"
+    },
+    {
+      "type": "p",
+      "text": "We help assess whether VAT registration is required or appropriate for your business and assist with the registration process where applicable."
+    },
+    {
+      "type": "p",
+      "text": "The assessment takes account of your activities, customers and transactions. VAT registration should be considered as part of the setup process, rather than left until questions arise over an invoice."
+    },
+    {
+      "type": "h2",
+      "text": "UBO registration"
+    },
+    {
+      "type": "p",
+      "text": "We assist with identifying and registering the company’s ultimate beneficial owners, based on its ownership and control structure."
+    },
+    {
+      "type": "p",
+      "text": "Our support includes coordinating the information and documents needed for the submission. We can also assist with subsequent updates and applicable confirmation requirements."
+    },
+    {
+      "type": "h2",
+      "text": "Ariadni and electronic access"
+    },
+    {
+      "type": "p",
+      "text": "We assist with Ariadni registration and the relevant government-platform access arrangements needed for the company’s filings."
+    },
+    {
+      "type": "p",
+      "text": "The appropriate access depends on the service involved. We help identify the relevant platform and coordinate the registration, identification or authorisation steps required."
+    },
+    {
+      "type": "h2",
+      "text": "Banking support"
+    },
+    {
+      "type": "p",
+      "text": "We assist with preparing and coordinating applications for company bank accounts, including the corporate documents, ownership information and business profile requested by the bank."
+    },
+    {
+      "type": "p",
+      "text": "We can help respond to requests for further information throughout the application process. Account opening remains subject to the bank’s own assessment and approval."
+    },
+    {
+      "type": "h2",
+      "text": "Accounting and ongoing administration"
+    },
+    {
+      "type": "p",
+      "text": "Once the company is established, we can support its ongoing accounting, corporate administration and compliance needs."
+    },
+    {
+      "type": "p",
+      "text": "Depending on the agreed scope, this may include bookkeeping, tax and VAT compliance, corporate records, changes to company particulars and coordination of annual filings. HR and payroll support can also be arranged where the company will employ staff."
+    },
+    {
+      "type": "h2",
+      "text": "A coordinated approach"
+    },
+    {
+      "type": "p",
+      "text": "The services required will depend on what your company does and how it intends to operate. We agree the scope with you, explain the documents needed and coordinate the relevant steps."
+    },
+    {
+      "type": "callout",
+      "text": "Planning to establish a Cyprus company? Contact SC Advisors to discuss incorporation, registrations and ongoing support for your business."
+    }
+  ]
+},
   {
     slug: 'cyprus-ip-box-regime',
     tag: 'Tax — IP',
